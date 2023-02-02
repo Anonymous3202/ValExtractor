@@ -1,0 +1,14 @@
+diff --git a/gremlin-core/src/main/java/org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal.java b/gremlin-core/src/main/java/org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal.java
+index bde1dea..8f9d9ce 100644
+--- a/gremlin-core/src/main/java/org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal.java
++++ b/gremlin-core/src/main/java/org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal.java
+@@ -2059,7 +2059,8 @@
+         // the properties into that step to gain an optimization for those graphs that support such capabilities.
+         if ((this.asAdmin().getEndStep() instanceof AddVertexStep || this.asAdmin().getEndStep() instanceof AddEdgeStep
+                 || this.asAdmin().getEndStep() instanceof AddVertexStartStep) && keyValues.length == 0 && null == cardinality) {
+-            ((Mutating) this.asAdmin().getEndStep()).addPropertyMutations(key, value);
++            Step<?, E> endStep = this.asAdmin().getEndStep();
++			((Mutating) endStep).addPropertyMutations(key, value);
+         } else {
+             this.asAdmin().addStep(new AddPropertyStep(this.asAdmin(), cardinality, key, value));
+             ((AddPropertyStep) this.asAdmin().getEndStep()).addPropertyMutations(keyValues);

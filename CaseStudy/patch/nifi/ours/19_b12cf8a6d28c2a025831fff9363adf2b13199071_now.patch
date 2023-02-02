@@ -1,0 +1,14 @@
+diff --git a/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core/src/main/java/org/apache/nifi/controller/scheduling/TimerDrivenSchedulingAgent.java b/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core/src/main/java/org/apache/nifi/controller/scheduling/TimerDrivenSchedulingAgent.java
+index fcd901f..5bf2b94 100644
+--- a/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core/src/main/java/org/apache/nifi/controller/scheduling/TimerDrivenSchedulingAgent.java
++++ b/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core/src/main/java/org/apache/nifi/controller/scheduling/TimerDrivenSchedulingAgent.java
+@@ -140,7 +140,8 @@
+                     // after the yield has expired.
+                     final long newYieldExpiration = connectable.getYieldExpiration();
+                     if (newYieldExpiration > System.currentTimeMillis()) {
+-                        final long yieldMillis = newYieldExpiration - System.currentTimeMillis();
++                        long now = System.currentTimeMillis();
++						final long yieldMillis = newYieldExpiration - now;
+                         final ScheduledFuture<?> scheduledFuture = futureRef.get();
+                         if (scheduledFuture == null) {
+                             return;

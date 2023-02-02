@@ -1,0 +1,14 @@
+diff --git a/gremlin-core/src/main/java/org/apache/tinkerpop/gremlin/process/computer/traversal/TraversalVertexProgram.java b/gremlin-core/src/main/java/org/apache/tinkerpop/gremlin/process/computer/traversal/TraversalVertexProgram.java
+index aba44d3..643fd9d 100644
+--- a/gremlin-core/src/main/java/org/apache/tinkerpop/gremlin/process/computer/traversal/TraversalVertexProgram.java
++++ b/gremlin-core/src/main/java/org/apache/tinkerpop/gremlin/process/computer/traversal/TraversalVertexProgram.java
+@@ -305,7 +305,8 @@
+             } else {
+                 // finalize locally with any last traversers dangling in the local traversal
+                 while (this.traversal.get().getEndStep().hasNext()) {
+-                    final Traverser.Admin traverser = this.traversal.get().getEndStep().next();
++                    Step<?, ?> endStep = this.traversal.get().getEndStep();
++					final Traverser.Admin traverser = endStep.next();
+                     traverser.detach();
+                     haltedTraversers.add(traverser);
+                 }
