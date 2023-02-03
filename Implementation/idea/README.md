@@ -80,4 +80,4 @@ After execution, the window will pop up as following.
 
 <img src="fig/finished.jpg" align="center" />
 
-All the results of idea execution are in `Evaluation/patch/Lang/idea` folders, which are stored in the form of `patch`..
+All the results of idea execution are in `Evaluation/patch/Lang/idea` folders, which are stored in the form of `patch`.
