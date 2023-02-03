@@ -107,6 +107,7 @@ Lang
 ### 6.4 Outputs of the Replication
 
 After execution, the following window will pop up:
+
 <img src="Fig/evalFinished.png" width="600" height="150" align="center" />
 
 All the generated Result will be show as follows. 
