@@ -175,4 +175,4 @@ Note2: the reproduction and comparison of IDEA under the folder `patch/commons-c
 FULL CONDITIONS when a set of literally identical expressions could be extracted by an extract variable refactoring:\
 $exps$ represents all expressions to be extracted, $name$ represents the name of the new variable, $p$ represents the program where $exps$ appear, and $loc$ represents the location where the new variable should be declared and initialized:
 
- <img src="./Fig/preconditions.png" align=center />
+ <img src="./Fig/preconditions.svg" align=center />
