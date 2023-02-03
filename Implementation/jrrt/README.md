@@ -1,4 +1,4 @@
-## Replication package for JRRT
+## Replication package for JRRT in Evaluation
 
 # Table of Contents
 
@@ -16,7 +16,7 @@
 
 # General Introduction
 
-This is the replication package for JRRT.
+This is the replication package for JRRT in evaluation.
 
 
 # Requirements
@@ -24,7 +24,7 @@ This is the replication package for JRRT.
  - Mac OS or Linux
  - Junit4
  - [JRRT](https://code.google.com/archive/p/jrrt)
-  
+ - [Defects4J](https://github.com/rjust/defects4j)
 # How to Replicate JRRT?
 
 ## 1. Clone replication package to your local file system 
