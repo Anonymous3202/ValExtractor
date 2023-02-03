@@ -40,6 +40,7 @@ This is the replication package for ICSE submission, containing both tools and d
 ## 2. Get Subject Applications
 
 `./Implementation/shell/casestudy.sh`
+
 `./Implementation/shell/evaluation.sh`
 
 Hint: considering the complexity of defects4j configuration, we provide the zip file of the example projects under `casestudy/projects/` and `evaluation/projects/` respectively.
