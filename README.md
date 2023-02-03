@@ -119,8 +119,6 @@ All the generated Result will be show as follows.
 
 `Console` shows the comparison between JRRT and ours as following.
 
-
-
 ```shell
 Lang total: 624
 JRRT and Ours do: 468
@@ -131,7 +129,7 @@ JRRT and Ours not do: 33
 
 Note1: all the files `*.xlsx` are obtained after we manually labeled the refactoring results of replication, rather than automatically generated.
 
-Note2: the way to obtain all the files under `/patch/Lang/ours` and the way to obtain all the files under `/jrrt/Lang/JRRT` will be will be explained in subsequent sections.
+Note2: the way to obtain all the files under `/patch/Lang/ours` and the way to obtain all the files under `/jrrt/Lang/JRRT` will be will be explained in [IDEA Instruction](Implementation/idea/README.md) and [JRRT Instruction](Implementation/jrrt/README.md)respectively.
 
 ## 7. Reproduce Case Study
  
