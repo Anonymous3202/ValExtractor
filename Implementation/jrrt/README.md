@@ -55,7 +55,9 @@ Note: please make sure all the paths end with `/`
 
 ## 5. Reproduce JRRT
 Run following Commands in Terminal:
+
 `cd PATH2JRRT` 
+
 `java -classpath .:lib/junit.jar:lib/cream106.jar:lib/fastjson.jar:lib/commons-io.jar:lib/org.eclipse.jgit.jar  -Xmx2G junit.awtui.TestRunner tests.eclipse.ExtractTemp.ExtractTempTests`
 
 ## 6. Outputs of JRRT 
