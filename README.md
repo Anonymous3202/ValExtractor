@@ -22,15 +22,14 @@ This is the replication package for ICSE submission, containing both tools and d
 
 # Requirements
  - Java >=11
- - Java 6
  - Git >= 1.9 
  - Eclipse IDE for Eclipse Committers(Older than 4.26.0)
- - IntelliJ IDEA
  - Mac OS or Linux
- - Python3
- - Junit4
  - [Defects4J](https://github.com/rjust/defects4j)
+ <!-- - IntelliJ IDEA
  - [JRRT](https://code.google.com/archive/p/jrrt)
+ - Junit4
+ - Java 6 -->
   
 # How to Replicate the Evaluation and Case Study?
 
@@ -54,7 +53,7 @@ Click `File` ... `Import`, then selected `Existing projects into Workspace`
 Select directory(path to **Implementation/ValExtractor**) as root and Click `Finish`
 
 
-### 4. Configure Path
+## 4. Configure Path
 
 Open `Constrants.java`(Locate in `valextractor.utils` package) and modify `Project_Path`( **Path2Implementation/ValExtractor**), `EXP1_ROOT`(the root path of the generated result in Case Study part) and `EXP2_ROOT`(the root path of the generated result in Evaluation part) 
 ```java
@@ -66,7 +65,7 @@ public static final String EXP2_ROOT = "***/ValExtractor/Evaluation/";
 ```	 
 Note: please make sure all the paths end with `/`
 
-### 5. Run as an Eclipse Application
+## 5. Run as an Eclipse Application
 
 Run ValExtractor as an Eclipse Application
 
@@ -74,24 +73,24 @@ Run ValExtractor as an Eclipse Application
 
 <img src="./Fig/5.PNG" align=center />  -->
 
-### 6. Reproduce Evaluation
+## 6. Reproduce Evaluation
 
 We take project "Lang" as an example to show how to reproduce evaluation.
 
-#### 6.1 Import Test Project
+### 6.1 Import Test Project
 
 Click `Create a project` or Open `File` ... `New` ... `Project`
 Configure Project Location, Click `Finish`.
 
 <!-- <img src="./Fig/importTest.png" align=center />  -->
 
-#### 6.2 Run the Plugin
+### 6.2 Run the Plugin
 
 Open `Replicate` and Click `Extract Variables` in menu.
 
 <!-- <img src="./Fig/62.PNG" align=center /> -->
 
-#### 6.3 Manually Specify Replication of Evaluation
+### 6.3 Manually Specify Replication of Evaluation
 
 The evaluation and case study have different running models. In the evaluation part, we should try all repetitive expressions whereas in the case study we should only try such refactorings discovered from evolution history. To this end, you should let the tool known what you want to replicate and which test project you want to replicate. 
 
@@ -104,7 +103,7 @@ Lang
 ```
 <!-- <img src="./Fig/runLang.png" align=center /> -->
 
-#### 6.4 Outputs of the Replication
+### 6.4 Outputs of the Replication
 
 After execution, the following window will pop up:
 <img src="Fig/evalFinished.png" width="600" height="150" align="center" />
@@ -133,20 +132,20 @@ Note1: all the files `*.xlsx` are obtained after we manually labeled the refacto
 
 Note2: the way to obtain all the files under `/patch/Lang/ours` and the way to obtain all the files under `/jrrt/Lang/JRRT` will be will be explained in subsequent sections.
 
-### 7. Reproduce Case Study
+## 7. Reproduce Case Study
  
 We take project `Codec` as an example to show how to reproduce evaluation. 
 
-#### 7.1 Import Test Project
+### 7.1 Import Test Project
 
 Click `Create a project` or Open `File` ... `New` ... `Project`
 Configure Location, and Click `Finish`.
 
-#### 7.2 Run the Plugin
+### 7.2 Run the Plugin
 
 Open `Replicate` and Click `Extract Variables` in menu.
 
-#### 7.3 Manually Specify Replication of Case Study
+### 7.3 Manually Specify Replication of Case Study
 
 The evaluation and case study have different running models. In the evaluation part, we should try all repetitive expressions whereas in the case study we should only try such refactorings discovered from evolution history. To this end, you should let the tool known what you want to replicate and which test project you want to replicate. 
 
@@ -157,7 +156,7 @@ mode type:2
 Case Study! please input project name in eclipse
 Codec
 ```
-#### 7.4  Outputs of the Replication
+### 7.4  Outputs of the Replication
 
 After execution, the window will pop up as Evaluation section.
 
