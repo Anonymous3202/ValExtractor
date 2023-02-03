@@ -37,8 +37,8 @@ public class MyAction extends AnAction {
     public void beforeActionPerformedUpdate(@NotNull AnActionEvent e) {
         super.beforeActionPerformedUpdate(e);
         MyLog.clear();
-        exp1(e);
-//        exp2(e);
+//         exp1(e);
+       exp2(e);
 
     }
 
