@@ -5,7 +5,7 @@
 - [Table of Contents](#table-of-contents)
 - [General Introduction](#general-introduction)
 - [Requirements](#requirements)
-- [How to Replicate JRRT?](#how-to-replicate-jrrt)
+- [How to Replicate IDEA?](#how-to-replicate-idea)
   - [1. Clone replication package to your local file system](#1-clone-replication-package-to-your-local-file-system)
   - [2. Get Subject Applications](#2-get-subject-applications)
   - [3. Import replication package into IntelliJ IDEA](#3-import-replication-package-into-intellij-idea)
@@ -28,7 +28,7 @@ This is the replication package for IDEA in evaluation.
  - IntelliJ IDEA >= 2022.3
   - [Defects4J](https://github.com/rjust/defects4j) 
   
-# How to Replicate JRRT?
+# How to Replicate IDEA?
 
 ## 1. Clone replication package to your local file system 
 
