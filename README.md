@@ -1,4 +1,4 @@
-## Replication package for paper "ValExtractor: An Automated and Reliable Approach to Extract Variable Refactorings"
+## Replication package for paper "An Automated Approach to Extracting Local Variables"
 
 # Table of Contents
 
@@ -10,7 +10,7 @@
 
 # General Introduction
 
-This is the replication package for ICSE submission, containing both tools and data that are requested by the replication. It also provides detailed instructions to replicate the evaluation.
+This is the replication package for FSE submission, containing both tools and data that are requested by the replication. It also provides detailed instructions to replicate the evaluation.
 
 # Contents of the replication package
 
