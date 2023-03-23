@@ -76,7 +76,10 @@ Run ValExtractor as an Eclipse Application
 
 ## 6. Reproduce Evaluation
 
-We take project "Lang" as an example to show how to reproduce evaluation.
+We take project "Lang" as an example to show how to reproduce evaluation. The way to obtain `Lang` is to run the command:
+```
+defects4j -p Lang -v 1f -w PATH2ValExtractor/Evaluation/projects/Lang
+```
 
 ### 6.1 Import Test Project
 
