@@ -78,8 +78,9 @@ Run ValExtractor as an Eclipse Application
 
 We take project "Lang" as an example to show how to reproduce evaluation. The way to obtain `Lang` is to run the command:
 ```
-defects4j -p Lang -v 1f -w PATH2ValExtractor/Evaluation/projects/Lang
+defects4j checkout -p Lang -v 1f -w PATH2ValExtractor/Evaluation/projects/Lang
 ```
+Hint: all the projects evaluated for refactorings have the same bug number `1f`.
 
 ### 6.1 Import Test Project
 
