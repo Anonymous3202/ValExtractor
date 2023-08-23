@@ -125,11 +125,11 @@ All the generated Result will be show as follows.
 `Console` shows the comparison between JRRT and ours as following.
 
 ```shell
-Lang total: 624
-JRRT and Ours do: 468
-JRRT does but Ours not does: 28
-Ours does but JRRT not does: 95
-JRRT and Ours not do: 33
+Lang total: 565
+JRRT and Ours do: 410
+JRRT does but Ours not does: 4
+Ours does but JRRT not does: 79
+JRRT and Ours not do: 17
 ```
 
 Note1: all the files `*.xlsx` are obtained after we manually labeled the refactoring results of replication, rather than automatically generated.
