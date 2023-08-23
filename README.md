@@ -59,7 +59,7 @@ Select directory(path to **Implementation/ValExtractor**) as root and Click `Fin
 Open `Constrants.java`(Locate in `valextractor.utils` package) and modify `Project_Path`( **Path2Implementation/ValExtractor**), `EXP1_ROOT`(the root path of the generated result in Case Study part) and `EXP2_ROOT`(the root path of the generated result in Evaluation part) 
 ```java
 //----------- need to configure ----------- 
-public static final String Project_Path="***/ValExtractor/Implementation/ValExtractor/"; 
+public static final String Project_Path = "***/ValExtractor/Implementation/ValExtractor/"; 
 public static final String EXP1_ROOT = "***/ValExtractor/CaseStudy/"; 
 public static final String EXP2_ROOT = "***/ValExtractor/Evaluation/"; 
 //----------------------------------------- 
