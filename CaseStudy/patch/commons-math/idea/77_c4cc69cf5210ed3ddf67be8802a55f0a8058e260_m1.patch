@@ -65,3 +65,36 @@ index fe32c6002..299a54dec 100644
        double corr20 = o[2][0] - m[2][0];
        double corr21 = o[2][1] - m[2][1];
        double corr22 = o[2][2] - m[2][2];
+diff --git a/src/mantissa/src/org/spaceroots/mantissa/algebra/Chebyshev.java b/src/mantissa/src/org/spaceroots/mantissa/algebra/Chebyshev.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/src/org/spaceroots/mantissa/algebra/Hermite.java b/src/mantissa/src/org/spaceroots/mantissa/algebra/Hermite.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/src/org/spaceroots/mantissa/algebra/Legendre.java b/src/mantissa/src/org/spaceroots/mantissa/algebra/Legendre.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/src/org/spaceroots/mantissa/algebra/Polynomial.java b/src/mantissa/src/org/spaceroots/mantissa/algebra/Polynomial.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/src/org/spaceroots/mantissa/algebra/PolynomialFraction.java b/src/mantissa/src/org/spaceroots/mantissa/algebra/PolynomialFraction.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/ChebyshevTest.java b/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/ChebyshevTest.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/HermiteTest.java b/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/HermiteTest.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/LegendreTest.java b/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/LegendreTest.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/PolynomialDoubleTest.java b/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/PolynomialDoubleTest.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/PolynomialFractionTest.java b/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/PolynomialFractionTest.java
+old mode 100755
+new mode 100644
+diff --git a/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/PolynomialRationalTest.java b/src/mantissa/tests-src/org/spaceroots/mantissa/algebra/PolynomialRationalTest.java
+old mode 100755
+new mode 100644

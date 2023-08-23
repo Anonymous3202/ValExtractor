@@ -1,20 +1,14 @@
 diff --git a/src/java/org/apache/commons/math/linear/BigMatrixImpl.java b/src/java/org/apache/commons/math/linear/BigMatrixImpl.java
-index ccb9a9d..2215e98 100644
+index ccb9a9d..00a32ad 100644
 --- a/src/java/org/apache/commons/math/linear/BigMatrixImpl.java
 +++ b/src/java/org/apache/commons/math/linear/BigMatrixImpl.java
-@@ -1042,11 +1042,12 @@
+@@ -1088,7 +1088,8 @@
              
-             // upper
-             for (int row = 0; row < col; row++) {
--                sum = lu[row][col];
+             //Divide the lower elements by the "winning" diagonal elt.
+             for (int row = col + 1; row < nRows; row++) {
+-                lu[row][col] = lu[row][col].divide(lu[col][col], scale, roundingMode);
 +                BigDecimal[] luRow = lu[row];
-+				sum = luRow[col];
-                 for (int i = 0; i < row; i++) {
--                    sum = sum.subtract(lu[row][i].multiply(lu[i][col]));
-+                    sum = sum.subtract(luRow[i].multiply(lu[i][col]));
-                 }
--                lu[row][col] = sum;
-+                luRow[col] = sum;
++				luRow[col] = luRow[col].divide(lu[col][col], scale, roundingMode);
              }
              
-             // lower
+         }
