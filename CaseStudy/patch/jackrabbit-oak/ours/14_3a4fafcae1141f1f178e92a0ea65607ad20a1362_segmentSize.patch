@@ -1,5 +1,5 @@
 diff --git a/oak-lucene/src/main/java/org/apache/jackrabbit/oak/plugins/index/lucene/writer/CommitMitigatingTieredMergePolicy.java b/oak-lucene/src/main/java/org/apache/jackrabbit/oak/plugins/index/lucene/writer/CommitMitigatingTieredMergePolicy.java
-index b899284..cc36a17 100644
+index b899284..6be21f2 100644
 --- a/oak-lucene/src/main/java/org/apache/jackrabbit/oak/plugins/index/lucene/writer/CommitMitigatingTieredMergePolicy.java
 +++ b/oak-lucene/src/main/java/org/apache/jackrabbit/oak/plugins/index/lucene/writer/CommitMitigatingTieredMergePolicy.java
 @@ -322,10 +322,11 @@
@@ -8,7 +8,7 @@ index b899284..cc36a17 100644
      public MergeSpecification findMerges(MergeTrigger mergeTrigger, SegmentInfos infos) throws IOException {
 -        if (verbose()) {
 -            message("findMerges: " + infos.size() + " segments");
-+        String segmentSize = infos.size();
++        int segmentSize = infos.size();
 +		if (verbose()) {
 +            message("findMerges: " + segmentSize + " segments");
          }
